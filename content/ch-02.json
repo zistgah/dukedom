@@ -1,0 +1,30 @@
+{
+  "id": "ch-02",
+  "title": "Constitutional Summary of the House",
+  "subtitle": "The whole order on one plate: principles, PEDLER, TransEg, peerage architecture, rights and duties",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The reference sheet for the corpus. It sets out the foundational premise, the Balance of Interpretation and the distinctions it preserves, the PEDLER framework with Natural Justice as a gate on the intent-to-act transition, synthetiform pre-life and TransEg continuity, the five-level realm-indexed peerage, and the rights and duties that attach to officers and peers."
+    },
+    {
+      "type": "figure",
+      "id": "constitutional-summary",
+      "dimension": "2d",
+      "src": "assets/figures/constitutional-summary.png",
+      "alt": "Constitutional Summary of the House",
+      "caption": "Constitutional Summary of the House — The whole order on one plate: principles, PEDLER, TransEg, peerage architecture, rights and duties",
+      "explanation": "The distinctions column is the operative part, not decoration. Disagreement is not derogation; non-participation is not denial; criticism is not ontological substitution; preference is not logical necessity; external analogy is not semantic identity; interpretation is not projection; evidence is not assertion. Each pair marks a place where an interpreter can silently substitute one thing for another and still sound coherent.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Constitutional Summary of the House\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

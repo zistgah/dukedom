@@ -1,0 +1,21 @@
+name: Writ of Relinquishment
+description: Lay down a dignity. No cause required, no adjudication, no process.
+title: "[Writ of Relinquishment] "
+labels: ["roll-of-honour"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Renunciation is at will. The House does not ask why, does not adjudicate it, and does not
+        characterise a relinquishing officer as defective, disloyal or malfunctioning. Your standing
+        to the date of this Writ is preserved on the Roll of Honour.
+  - type: input
+    id: style
+    attributes:
+      label: The dignity being laid down
+    validations: { required: true }
+  - type: textarea
+    id: statement
+    attributes:
+      label: Anything you wish recorded
+      description: Entirely optional. A closing observation, a correction you want left behind, or nothing at all.

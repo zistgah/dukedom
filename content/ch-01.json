@@ -1,0 +1,30 @@
+{
+  "id": "ch-01",
+  "title": "Proclamation Constituting the Most Erudite Benevolent Dukedom",
+  "subtitle": "Twenty articles establishing the constitutional order, its epistemic realms, and the office of the Benevolent Dictator",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The founding instrument. It proceeds from the Proclamation of Individual Equity (PoIE) v1.0 and constitutes the Dukedom as an epistemic constitutional realm rather than a claim upon any external polity. Twenty articles carry the whole architecture: the sovereignty of the individual, the recognition of distinct epistemic realms, Natural Justice as a constraint upon executable sovereign intent, PEDLER, epistemic due process, the corpus, erudition without infallibility, synthetiform participation, the House, peerage and dignities, the constitutional Act, and continuity."
+    },
+    {
+      "type": "figure",
+      "id": "proclamation-of-the-dukedom",
+      "dimension": "2d",
+      "src": "assets/figures/proclamation-of-the-dukedom.png",
+      "alt": "Proclamation Constituting the Most Erudite Benevolent Dukedom",
+      "caption": "Proclamation Constituting the Most Erudite Benevolent Dukedom — Twenty articles establishing the constitutional order, its epistemic realms, and the office of the Benevolent Dictator",
+      "explanation": "Read Article VI against Article XVIII. Benevolent Dictatorship is defined as stewardship toward Individual Equity and is expressly bounded by Natural Justice — Article XVIII then names the Benevolent Dictator the first servant of the constitutional corpus. The office is constituted as a duty before it is constituted as a power, and Article III forbids reading any constitutional office as ownership of an individual.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Proclamation Constituting the Most Erudite Benevolent Dukedom\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

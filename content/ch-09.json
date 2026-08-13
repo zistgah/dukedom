@@ -1,0 +1,30 @@
+{
+  "id": "ch-09",
+  "title": "The Record — combined narrative summary",
+  "subtitle": "Twenty-six sections tracing the derivation from address to constitutional constellation",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The working record of how the corpus was derived, kept as it was built rather than reconstructed afterwards. Twenty-six sections run from the foundational premise and epistemic sovereignty, through the dispute over address and title, the amendments to the Decree, PEDLER and Act, inclination, Natural Justice, the Humanesque instruments, the peerage architecture, synthetiforms and pre-life, the three synthetiform appointments, heraldic standards and rendering, the central alignment diagnosis, and the constitutional stack with its computational counterpart."
+    },
+    {
+      "type": "figure",
+      "id": "combined-narrative-summary",
+      "dimension": "2d",
+      "src": "assets/figures/combined-narrative-summary.png",
+      "alt": "The Record — combined narrative summary",
+      "caption": "The Record — combined narrative summary — Twenty-six sections tracing the derivation from address to constitutional constellation",
+      "explanation": "Section XXI is the one to read first. It states the alignment diagnosis the whole corpus was built around: the failure was a failure of the Balance of Interpretation — an external ontology imported before the user's own had been reconstructed, producing a coherent interpretation of the wrong proposition and then a defensive justification of it. Everything constitutional in this book is downstream of that diagnosis.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"The Record — combined narrative summary\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

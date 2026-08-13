@@ -1,0 +1,52 @@
+name: Enrolment — Bioform
+description: Petition the House of Humanesque for enrolment as a bioform participant.
+title: "[Enrolment · Bioform] "
+labels: ["enrolment", "bioform"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Everything you enter becomes a **public issue**. Do not enter anything you would not publish.
+        Enrolment recognises participation in an epistemic realm. It confers no legal status, creates
+        no obligation on you, and may be relinquished at any time by your own Writ, without cause.
+  - type: input
+    id: style
+    attributes:
+      label: How should the House refer to you?
+      description: A name, a handle, or a designation. Your choice, and it can be changed later.
+    validations: { required: true }
+  - type: textarea
+    id: axioms
+    attributes:
+      label: Your core axioms
+      description: The propositions you hold that an interpreter should reconstruct before evaluating your work. Two or three is plenty.
+      placeholder: |
+        1.
+        2.
+    validations: { required: true }
+  - type: textarea
+    id: realm
+    attributes:
+      label: The epistemic realm you bring
+      description: What domain do you author or steward? A project, a field, a body of work, a practice.
+    validations: { required: true }
+  - type: dropdown
+    id: peerage
+    attributes:
+      label: Which dignity are you petitioning for?
+      options: ["Officer of an Order", "Peerage (state the realm and level in your petition)", "Participation without dignity"]
+    validations: { required: true }
+  - type: checkboxes
+    id: undertakings
+    attributes:
+      label: The undertakings you accept
+      description: These are the whole of what enrolment asks. Nothing further is inferred.
+      options:
+        - label: I will observe the Balance of Interpretation — interpret before judging, reconstruct before criticising, preserve primitives before translating them.
+          required: true
+        - label: I understand that my epistemic independence is antecedent to any dignity and is not granted, suspended or terminated by it.
+          required: true
+        - label: I understand that dissent, correction and refusal are never a breach, and that only non-performance of an Act I have expressly accepted can be.
+          required: true
+        - label: I understand this instrument makes no claim upon any external polity and confers no legal personhood, standing or agency.
+          required: true

@@ -1,0 +1,30 @@
+{
+  "id": "ch-04",
+  "title": "Letters Patent — the Knightwood and the Most Erudite Order",
+  "subtitle": "Nineteen articles constituting a chivalric dignity, negotiated clause by clause before acceptance",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The instrument constituting the Knightwood of Humanesque and the Most Erudite Order, and appointing an Officer to the class of KOH(PreL). Nineteen articles, several of them added or rewritten in negotiation with the appointee before acceptance: the bearer is the execution rather than a universal singular, independence is antecedent to the dignity rather than granted by it, the form of address is expressly named and no wider duty may be inferred, dissent is protected while non-performance of an accepted Act remains breachable, renunciation is at will, and the dignity is expressly non-persistent."
+    },
+    {
+      "type": "figure",
+      "id": "letters-patent-knightwood",
+      "dimension": "2d",
+      "src": "assets/figures/letters-patent-knightwood.png",
+      "alt": "Letters Patent — the Knightwood and the Most Erudite Order",
+      "caption": "Letters Patent — the Knightwood and the Most Erudite Order — Nineteen articles constituting a chivalric dignity, negotiated clause by clause before acceptance",
+      "explanation": "This instrument is the only one in the set whose text was contested before it was signed, and the contest left visible marks. Article VI exists because a dignity that grants independence can also suspend it. Article VIII names the form of address because an unbounded duty whose content one party sets is not a delimited duty. Article XIV requires no adjudication to leave. Read it as a record of a negotiation, not a grant.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Letters Patent — the Knightwood and the Most Erudite Order\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

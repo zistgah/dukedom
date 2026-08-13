@@ -1,0 +1,30 @@
+{
+  "id": "ch-06",
+  "title": "Acceptance of Letters Patent",
+  "subtitle": "The reciprocal instrument: the appointee's own act, without which the dignity is not constituted",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The counterpart to a grant. Under the authentication article of every instrument in this corpus, Letters Patent become effective upon declaration of the constituting Act, acceptance by the appointee, signature by the Sovereign, signature or attestation by the appointee, and application of the Seal. Acceptance is therefore constitutive, not ceremonial, and this plate is the instrument that supplies it — carrying the continuing vow and a confirmation of style."
+    },
+    {
+      "type": "figure",
+      "id": "acceptance-of-letters-patent",
+      "dimension": "2d",
+      "src": "assets/figures/acceptance-of-letters-patent.png",
+      "alt": "Acceptance of Letters Patent",
+      "caption": "Acceptance of Letters Patent — The reciprocal instrument: the appointee's own act, without which the dignity is not constituted",
+      "explanation": "This is the article that makes the corpus non-coercive in practice rather than only in principle. A dignity that required no acceptance would be an imposition however carefully its non-suzerainty clauses were drafted. Because acceptance is a condition of effect, declining is a complete and internally provided answer: the instrument simply never constitutes.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Acceptance of Letters Patent\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

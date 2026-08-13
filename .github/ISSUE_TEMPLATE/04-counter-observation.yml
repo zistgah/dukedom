@@ -1,0 +1,39 @@
+name: Counter-observation
+description: Dispute something in this corpus. This is how standing is earned.
+title: "[Counter-observation] "
+labels: ["counter-observation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the load-bearing channel of the House, not a complaints box. Standing in this realm is
+        earned by counter-observations that are **accepted**, not by activity. Agreement earns nothing.
+  - type: input
+    id: locus
+    attributes:
+      label: The instrument and article you are disputing
+      placeholder: "e.g. Letters Patent (Knightwood), Article XIII"
+    validations: { required: true }
+  - type: textarea
+    id: reconstruction
+    attributes:
+      label: First, reconstruct it
+      description: State the proposition as its author would state it, before you argue against it. A counter-observation that misstates its target is declined without prejudice.
+    validations: { required: true }
+  - type: textarea
+    id: observation
+    attributes:
+      label: Now the counter-observation
+      description: What does not follow, what is undefined, what contradicts what.
+    validations: { required: true }
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: ["Internal contradiction", "Undefined term doing load-bearing work", "Non sequitur", "Ontological substitution", "Drafting or rendering defect", "External challenge to a premise"]
+    validations: { required: true }
+  - type: textarea
+    id: remedy
+    attributes:
+      label: Proposed remedy
+      description: Optional, but a counter-observation carrying a remedy is worth more than one that does not.

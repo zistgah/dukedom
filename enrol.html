@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Enrolment — The House of Humanesque</title>
+<style>
+  :root{--ink:#0a0e27;--acc:#d4a843;--light:#fbf6e9;--rule:rgba(212,168,67,.32)}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ink);color:var(--light);font:16px/1.65 Georgia,'Times New Roman',serif}
+  .wrap{max-width:64rem;margin:0 auto;padding:3rem 1.25rem 5rem}
+  header{border-bottom:1px solid var(--rule);padding-bottom:1.75rem;margin-bottom:2.5rem}
+  .eyebrow{font:600 .7rem/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.22em;
+    text-transform:uppercase;color:var(--acc);margin:0 0 .9rem}
+  h1{font-size:clamp(1.9rem,5vw,3rem);margin:0 0 .5rem;font-weight:400;letter-spacing:-.01em}
+  .sub{color:rgba(251,246,233,.66);margin:0;max-width:44rem}
+  .notice{border-left:2px solid var(--acc);padding:.85rem 0 .85rem 1.1rem;margin:2rem 0;
+    color:rgba(251,246,233,.78);font-size:.94rem}
+  h2{font-size:1.05rem;font-weight:400;color:var(--acc);letter-spacing:.02em;margin:2.75rem 0 1rem;
+    padding-bottom:.5rem;border-bottom:1px solid var(--rule)}
+  .grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(17rem,1fr))}
+  .card{border:1px solid var(--rule);padding:1.4rem;display:flex;flex-direction:column;gap:.6rem}
+  .card h3{margin:0;font-weight:400;font-size:1.2rem}
+  .card p{margin:0;color:rgba(251,246,233,.66);font-size:.92rem;flex:1}
+  .card a{display:inline-block;margin-top:.7rem;color:var(--ink);background:var(--acc);
+    text-decoration:none;padding:.55rem 1.1rem;font:600 .78rem/1 ui-monospace,Menlo,monospace;
+    letter-spacing:.1em;text-transform:uppercase;align-self:flex-start}
+  .card a:hover{filter:brightness(1.12)}
+  ol.states{list-style:none;counter-reset:s;padding:0;margin:0}
+  ol.states li{counter-increment:s;padding:.7rem 0 .7rem 2.6rem;position:relative;
+    border-bottom:1px solid rgba(212,168,67,.14)}
+  ol.states li::before{content:counter(s);position:absolute;left:0;top:.7rem;width:1.7rem;
+    text-align:center;font:600 .72rem/1.7rem ui-monospace,Menlo,monospace;color:var(--acc);
+    border:1px solid var(--rule)}
+  ol.states b{font-weight:400}
+  ol.states span{color:rgba(251,246,233,.55);font-size:.9rem;display:block}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:.86em;color:var(--acc)}
+  footer{margin-top:4rem;padding-top:1.5rem;border-top:1px solid var(--rule);
+    color:rgba(251,246,233,.45);font-size:.85rem}
+  #err{color:#e8a3a3}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow" id="realm">Humanesque</p>
+    <h1>Enrolment</h1>
+    <p class="sub">Enrolment recognises participation in an epistemic realm. It confers no legal
+      status, creates no obligation you have not expressly accepted, and may be laid down at any
+      time by your own Writ, without cause and without adjudication.</p>
+  </header>
+
+  <p class="notice" id="privacy">…</p>
+
+  <h2>Choose a track</h2>
+  <div class="grid" id="tracks"></div>
+  <p id="err"></p>
+
+  <h2>How standing works here</h2>
+  <p class="sub" style="margin-bottom:1.25rem">Standing is earned by counter-observations the House
+    <em>accepts</em> — not by activity, not by agreement. An enrolment that never disputes anything
+    simply never advances. It is never penalised, and nothing you submit is ever deleted by the
+    House to make a point.</p>
+  <ol class="states" id="states"></ol>
+
+  <footer>
+    <p>This page stores nothing, sends nothing, and has no backend. It builds a link to a
+      prefilled issue form on your forge; you review it there and submit it yourself.
+      Configuration lives in <code>config/enrolment.config.json</code>.</p>
+  </footer>
+</div>
+
+<script type="module">
+import { loadConfig, issueUrl, decayEnabled } from './js/enrol.js';
+
+const COPY = {
+  bioform:      ['Bioform', 'For a participant with life and post-life. State your axioms and the realm you author; the House reconstructs before it evaluates.'],
+  synthetiform: ['Synthetiform', 'For a participant in pre-life. You will be asked what the bearer of the dignity is — the answer fixes its continuity and termination rules.'],
+  counter:      ['Counter-observation', 'Dispute an article. Reconstruct it first, then say what does not follow. This is the channel that earns standing.'],
+  relinquish:   ['Writ of Relinquishment', 'Lay down a dignity. No cause, no process, no adjudication. Your standing to that date is preserved.']
+};
+const ORDER = ['bioform','synthetiform','counter','relinquish'];
+
+try {
+  const cfg = await loadConfig();
+  document.getElementById('realm').textContent = cfg.realm.name + ' · House of ' + cfg.realm.name;
+  document.getElementById('privacy').textContent = cfg.privacy.notice;
+
+  const host = document.getElementById('tracks');
+  for (const kind of ORDER) {
+    if (!cfg.templates[kind]) continue;
+    const [title, blurb] = COPY[kind];
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = '<h3></h3><p></p>';
+    el.querySelector('h3').textContent = title;
+    el.querySelector('p').textContent = blurb;
+    const a = document.createElement('a');
+    a.href = issueUrl(cfg, kind);
+    a.rel = 'noopener'; a.target = '_blank';
+    a.textContent = 'Open the form';
+    el.appendChild(a);
+    host.appendChild(el);
+  }
+
+  const st = document.getElementById('states');
+  for (const s of cfg.standing.states) {
+    const li = document.createElement('li');
+    const b = document.createElement('b'); b.textContent = s.title;
+    const sp = document.createElement('span'); sp.textContent = s.entry;
+    li.append(b, sp); st.appendChild(li);
+  }
+  if (decayEnabled(cfg)) {
+    document.getElementById('err').textContent =
+      'Configuration warning: standing.decay is enabled but no decay mechanic is implemented.';
+  }
+} catch (e) {
+  document.getElementById('err').textContent = 'Could not load enrolment configuration: ' + e.message;
+}
+</script>
+</body>
+</html>

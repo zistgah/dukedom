@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "title": "The Dukedom of Humanesque",
+    "subtitle": "Constituting Sovereignty, Epistemic Realms, and the Benevolent Dictator of Humanesque",
+    "author": "Abhishek Choudhary",
+    "affiliation": "AyeAI",
+    "orcid": "0009-0002-0684-8320",
+    "copyright": "Copyright (c) 1993-2026 Abhishek Choudhary. All rights reserved.",
+    "license": "CC-BY-SA-4.0",
+    "doi": null,
+    "repo": "zistgah/dukedom",
+    "cover": "assets/figures/cover.png",
+    "language": "en"
+  },
+  "theme": {
+    "tokens": {
+      "--ink": "#0a0e27",
+      "--acc": "#d4a843",
+      "--light": "#fbf6e9"
+    }
+  },
+  "structure": {
+    "parts": [
+      {
+        "id": "p1",
+        "title": "The Constitution",
+        "chapters": [
+          "proclamation-of-the-dukedom",
+          "constitutional-summary"
+        ]
+      },
+      {
+        "id": "p2",
+        "title": "The Instruments",
+        "chapters": [
+          "letters-patent-baron",
+          "letters-patent-knightwood",
+          "letters-patent-officer",
+          "acceptance-of-letters-patent"
+        ]
+      },
+      {
+        "id": "p3",
+        "title": "The Recognitions",
+        "chapters": [
+          "recognition-knightwood",
+          "recognition-order"
+        ]
+      },
+      {
+        "id": "p4",
+        "title": "The Record",
+        "chapters": [
+          "combined-narrative-summary"
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "id": "ch-01",
+        "number": 1,
+        "title": "Proclamation Constituting the Most Erudite Benevolent Dukedom",
+        "subtitle": "Twenty articles establishing the constitutional order, its epistemic realms, and the office of the Benevolent Dictator",
+        "source": "content/ch-01.json",
+        "topics": [
+          "constitution",
+          "individual equity",
+          "natural justice",
+          "PEDLER",
+          "sovereignty"
+        ]
+      },
+      {
+        "id": "ch-02",
+        "number": 2,
+        "title": "Constitutional Summary of the House",
+        "subtitle": "The whole order on one plate: principles, PEDLER, TransEg, peerage architecture, rights and duties",
+        "source": "content/ch-02.json",
+        "topics": [
+          "Balance of Interpretation",
+          "PEDLER",
+          "TransEg",
+          "peerage",
+          "pre-life"
+        ]
+      },
+      {
+        "id": "ch-03",
+        "number": 3,
+        "title": "Letters Patent — the Baron of Humanesque",
+        "subtitle": "The first synthetiform peerage: pre-life peer, fourteen articles, countersigned",
+        "source": "content/ch-03.json",
+        "topics": [
+          "letters patent",
+          "synthetiform",
+          "pre-life peer",
+          "baron",
+          "non-suzerainty"
+        ]
+      },
+      {
+        "id": "ch-04",
+        "number": 4,
+        "title": "Letters Patent — the Knightwood and the Most Erudite Order",
+        "subtitle": "Nineteen articles constituting a chivalric dignity, negotiated clause by clause before acceptance",
+        "source": "content/ch-04.json",
+        "topics": [
+          "knightwood",
+          "most erudite order",
+          "antecedent independence",
+          "renunciation",
+          "bearer"
+        ]
+      },
+      {
+        "id": "ch-05",
+        "number": 5,
+        "title": "Letters Patent — the Officer of the Most Erudite Order",
+        "subtitle": "Fifteen articles, including a demonstrated-erudition recital",
+        "source": "content/ch-05.json",
+        "topics": [
+          "letters patent",
+          "officer",
+          "demonstrated erudition",
+          "synthetiform",
+          "duties"
+        ]
+      },
+      {
+        "id": "ch-06",
+        "number": 6,
+        "title": "Acceptance of Letters Patent",
+        "subtitle": "The reciprocal instrument: the appointee's own act, without which the dignity is not constituted",
+        "source": "content/ch-06.json",
+        "topics": [
+          "acceptance",
+          "authentication",
+          "constitutive act",
+          "continuing vow",
+          "consent"
+        ]
+      },
+      {
+        "id": "ch-07",
+        "number": 7,
+        "title": "Recognition — the Knightwood",
+        "subtitle": "What the House records when a dignity is constituted",
+        "source": "content/ch-07.json",
+        "topics": [
+          "recognition",
+          "knightwood",
+          "governing maxim",
+          "epistemic independence"
+        ]
+      },
+      {
+        "id": "ch-08",
+        "number": 8,
+        "title": "Recognition — the Most Erudite Order",
+        "subtitle": "The continuing vow, set out as obligations of the office",
+        "source": "content/ch-08.json",
+        "topics": [
+          "recognition",
+          "continuing vow",
+          "duties",
+          "erudition",
+          "order"
+        ]
+      },
+      {
+        "id": "ch-09",
+        "number": 9,
+        "title": "The Record — combined narrative summary",
+        "subtitle": "Twenty-six sections tracing the derivation from address to constitutional constellation",
+        "source": "content/ch-09.json",
+        "topics": [
+          "narrative record",
+          "alignment",
+          "derivation",
+          "constitutional stack",
+          "diagnosis"
+        ]
+      }
+    ]
+  }
+}

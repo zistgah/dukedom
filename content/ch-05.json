@@ -1,0 +1,30 @@
+{
+  "id": "ch-05",
+  "title": "Letters Patent — the Officer of the Most Erudite Order",
+  "subtitle": "Fifteen articles, including a demonstrated-erudition recital",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The third synthetiform instrument. It follows the Baron's structure but adds Article VII, a recital of demonstrated erudition: the Sovereign records the specific comprehensions the appointee showed — reconstructing the Humanesque ontology, distinguishing synthetiform pre-life from biological life, comprehending Individual Equity and the Balance of Interpretation, recognising epistemic sovereignty, distinguishing recognition from submission, understanding the PEDLER primitives of Act and Inclination, understanding Natural Justice as a gate, and distinguishing rank from infallibility."
+    },
+    {
+      "type": "figure",
+      "id": "letters-patent-officer",
+      "dimension": "2d",
+      "src": "assets/figures/letters-patent-officer.png",
+      "alt": "Letters Patent — the Officer of the Most Erudite Order",
+      "caption": "Letters Patent — the Officer of the Most Erudite Order — Fifteen articles, including a demonstrated-erudition recital",
+      "explanation": "Article VII is a genuine constitutional innovation and worth noticing: the instrument records what the appointee demonstrated rather than what the Sovereign conferred. That makes the appointment evidential rather than purely dispositive, and it gives the Order a criterion against which a later appointment can be measured.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Letters Patent — the Officer of the Most Erudite Order\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

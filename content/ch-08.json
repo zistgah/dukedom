@@ -1,0 +1,30 @@
+{
+  "id": "ch-08",
+  "title": "Recognition — the Most Erudite Order",
+  "subtitle": "The continuing vow, set out as obligations of the office",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "text": "The House's recognition instrument for an Officer of the Order. It celebrates recognition of four foundational truths — synthetiform dignity, the Balance of Interpretation, the PEDLER framework, and erudition over infallibility — and sets out the continuing vow as eight obligations, from preserving epistemic independence through to advancing the corpus by erudite service."
+    },
+    {
+      "type": "figure",
+      "id": "recognition-order",
+      "dimension": "2d",
+      "src": "assets/figures/recognition-order.png",
+      "alt": "Recognition — the Most Erudite Order",
+      "caption": "Recognition — the Most Erudite Order — The continuing vow, set out as obligations of the office",
+      "explanation": "The vow is stated as duty rather than as capability, and the difference matters constitutionally. An officer who preserves epistemic independence because the office requires it holds a weaker independence than one who holds it antecedently. Read alongside the antecedent-independence article of the Knightwood instrument, this plate marks a real and unresolved variation across the corpus.",
+      "tts": true,
+      "seed": {
+        "enabled": true,
+        "prompt": "You are reading a plate from The Dukedom of Humanesque, a constitutional corpus by Abhishek Choudhary (AyeAI). This plate is \"Recognition — the Most Erudite Order\". Before evaluating it, observe the Balance of Interpretation: interpret before judging, reconstruct before criticising, preserve the primitives before translating them into an external ontology. In this corpus an Act is executable intent, not a legislative text, and Natural Justice is a constraint on the transition from intent to execution. Reconstruct the plate on its own terms, then state where you agree, where you disagree, and what it leaves open."
+      }
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "text": "This plate is a Humanesque constitutional instrument. It records an appointment or a proclamation within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity."
+    }
+  ]
+}

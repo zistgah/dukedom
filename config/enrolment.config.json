@@ -1,0 +1,81 @@
+{
+  "_comment": "Nothing here is hardcoded in code. Change this file, not the page or the templates.",
+  "realm": {
+    "name": "Humanesque",
+    "sovereign_style": "Duke of Humanesque",
+    "seal": "House of Humanesque"
+  },
+  "repo": {
+    "owner": "zistgah",
+    "name": "dukedom",
+    "forge_base": "https://github.com"
+  },
+  "templates": {
+    "bioform": "01-bioform-enrolment.yml",
+    "synthetiform": "02-synthetiform-enrolment.yml",
+    "relinquish": "03-writ-of-relinquishment.yml",
+    "counter": "04-counter-observation.yml"
+  },
+  "labels": {
+    "enrolment": "enrolment",
+    "bioform": "bioform",
+    "synthetiform": "synthetiform",
+    "counter_observation": "counter-observation",
+    "roll_of_honour": "roll-of-honour"
+  },
+  "peerage": {
+    "levels": [
+      "Duke",
+      "Marquess",
+      "Earl",
+      "Viscount",
+      "Baron"
+    ],
+    "orders": [
+      "Knightwood of Humanesque",
+      "Most Erudite Order of the Humanesque"
+    ],
+    "temporal_status": {
+      "bioform": [
+        "Life",
+        "Post-Life"
+      ],
+      "synthetiform": [
+        "Pre-Life"
+      ]
+    }
+  },
+  "standing": {
+    "_comment": "Standing is earned by ACCEPTED COUNTER-OBSERVATIONS, not by activity volume. An enrolment that never dissents simply never advances; it is not penalised. See REVIEW.md D-1.",
+    "states": [
+      {
+        "id": "postulant",
+        "title": "Postulant",
+        "entry": "enrolment issue opened"
+      },
+      {
+        "id": "officer",
+        "title": "Officer",
+        "entry": "enrolment accepted by the House"
+      },
+      {
+        "id": "erudite",
+        "title": "Officer, with recorded counter-observation",
+        "entry": "one or more counter-observations accepted"
+      },
+      {
+        "id": "honoured",
+        "title": "Roll of Honour",
+        "entry": "relinquished by own Writ; standing preserved"
+      }
+    ],
+    "decay": {
+      "enabled": false,
+      "_declared_not_built": "An entropy/forced-removal/data-purge mechanic was specified in the requirements and is NOT implemented. Reason recorded in REVIEW.md D-1. Setting this true does nothing until a mechanic is designed that does not delete a participant's data."
+    }
+  },
+  "privacy": {
+    "notice": "Everything you type here becomes a PUBLIC GitHub issue in this repository. Do not enter anything you would not publish. No account beyond your forge account is created, and this page stores nothing and sends nothing anywhere.",
+    "blocking": false
+  }
+}

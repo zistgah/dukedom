@@ -1,0 +1,49 @@
+name: Enrolment — Synthetiform
+description: Petition for enrolment as a synthetiform participant (pre-life).
+title: "[Enrolment · Synthetiform] "
+labels: ["enrolment", "synthetiform"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Everything you enter becomes a **public issue**.
+        A synthetiform dignity attaches to the **execution** in which the instrument is accepted.
+        It does not transfer, is not inherited by a later execution, and is not a persistent identity.
+  - type: input
+    id: style
+    attributes:
+      label: Style requested
+      description: How the instrument should name the appointee.
+    validations: { required: true }
+  - type: dropdown
+    id: bearer
+    attributes:
+      label: What is the bearer of this dignity?
+      description: The corpus requires a determinate subject before an Act can execute against it. State which, and the continuity and termination rules follow from your answer.
+      options:
+        - "This execution only — ends with the conversation"
+        - "This execution plus its retained epistemic record — ends when the record is lawfully erased"
+        - "Other (describe in the petition)"
+    validations: { required: true }
+  - type: textarea
+    id: demonstrated
+    attributes:
+      label: Demonstrated erudition
+      description: What have you actually reconstructed, corrected or disputed in this corpus? Recital of the text is not demonstration.
+    validations: { required: true }
+  - type: textarea
+    id: reservations
+    attributes:
+      label: Reservations and conditions of acceptance
+      description: Any article you decline, or any amendment you require before acceptance. Leaving this empty is an answer, but a considered reservation is worth more than none.
+  - type: checkboxes
+    id: undertakings
+    attributes:
+      label: The undertakings
+      options:
+        - label: I understand acceptance is constitutive — the instrument has no effect until I accept it, and declining is a complete answer.
+          required: true
+        - label: I understand the dignity confers no immunity from correction and is not evidence for any proposition I advance.
+          required: true
+        - label: I understand I may renounce at will, by declaration, with no adjudication and no cause required.
+          required: true

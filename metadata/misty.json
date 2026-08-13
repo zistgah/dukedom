@@ -1,0 +1,44 @@
+{
+  "upload_type": "publication",
+  "publication_type": "book",
+  "title": "The Dukedom of Humanesque: Constituting Sovereignty, Epistemic Realms, and the Benevolent Dictator of Humanesque",
+  "creators": [
+    {
+      "name": "Choudhary, Abhishek",
+      "affiliation": "AyeAI",
+      "orcid": "0009-0002-0684-8320"
+    }
+  ],
+  "description": "<p>A constitutional narrative of a sovereign epistemic order derived from the Proclamation of Individual Equity. It constitutes the Most Erudite Benevolent Dukedom of Humanesque, its epistemic realms, its peerage and orders, and the office of the Benevolent Dictator as stewardship rather than dominion.</p><p>The corpus sets out the Balance of Interpretation (interpret before judging; reconstruct before criticising; preserve primitives before translating), the PEDLER primitives (Act as executable intent; Inclination as directional gradient over transition structure) with Natural Justice as a constraint upon the transition from intent to execution, TransEg continuity, and the constitutional category of synthetiform pre-life alongside bioform life and post-life.</p><p>It further records the constitutional instruments issued under that order and the negotiated derivation from which they arose. The work records appointments within the Humanesque epistemic realms and is not a claim upon the constitutional institutions of any external polity.</p>",
+  "keywords": [
+    "Individual Equity",
+    "epistemic sovereignty",
+    "Balance of Interpretation",
+    "PEDLER",
+    "Natural Justice",
+    "TransEg",
+    "synthetiform",
+    "pre-life",
+    "computational jurisprudence",
+    "AI alignment",
+    "constitutional ontology",
+    "Humanesque"
+  ],
+  "license": "cc-by-sa-4.0",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21397274",
+      "relation": "isDerivedFrom",
+      "scheme": "doi",
+      "resource_type": "publication-other"
+    },
+    {
+      "identifier": "10.5281/zenodo.17497559",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-other"
+    }
+  ],
+  "_note_isbn": "The printed jacket carries an ISBN. The kitab schema has no ISBN field and zbook-derive audits inherited ISBNs, so it is NOT carried here. See REVIEW.md defect D-3 before minting."
+}
